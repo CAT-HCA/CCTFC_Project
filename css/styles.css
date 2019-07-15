@@ -5,3 +5,8 @@
 .active:hover {
     color: #17a2b8;
 }
+
+ .leftnav a:hover{
+    color:#343a40;
+    
+}
