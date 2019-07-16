@@ -1,0 +1,31 @@
+/*TOP NAV CSS*/
+a:link, a:visited {
+    color: white; 
+  }
+  
+  .topnav a:hover {
+    color:white;
+    text-decoration:underline;
+  }
+  
+  .topnav a.active {
+    color: #17a2b8;
+  }
+
+
+/*LEFT SIDE NAV CSS*/
+.sidebar {
+    background-color: #17a2b8;
+}
+
+ul.sidebar a:link, a:visited {
+    color: white; 
+  }
+  
+ul.sidebar a:hover {
+    text-decoration:underline;
+  }
+  
+ul.sidebar  a.active {
+    color: white;
+  }

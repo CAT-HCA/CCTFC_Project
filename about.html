@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- linking custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
 
     <!--Font Awesome link-->
     <script src="https://kit.fontawesome.com/d9e1614114.js"></script>
@@ -28,21 +28,23 @@
     <!-- Nav bar -->
     <!--Brand Logo -->
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
         <a class="navbar-brand" href="index.html">
             <img src="img/large_mask_logo.png" height="40" alt="fencing mask logo">
             <span class="align-middle font-weight-bold text-info cctfc">CCTFC</span>
         </a>
         <!--Right side nav items-->
-        <ul class="nav">
+
+    
+        <ul class="nav topnav">
             <li class="nav-item">
                 <a class="nav-link invisible" href="account.html">My Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="login.html">Login</a>
+                <a class="nav-link inactive" href="login.html">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
+                <a class="nav-link active" href="#">About</a>
             </li>
             <li>
                 <a class="btn btn-info" href="register.html" role="button">Become a Member!</a>
@@ -51,6 +53,7 @@
     </nav>
 
     <!-- Header -->
+    
 
     <header class="row">
         <div class="col-12">
@@ -63,59 +66,32 @@
 
     <!-- left side scrolling navigation -->
 
-
     <main class="row">
-        <div class="col-12">
-            <div class="container row">
-                <aside class="nav">
-                    <ul class="nav flex-column bg-info leftnav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#ourclub">Our Club</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#ourowner">Our Owner</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#history">History of Fencing</a>
-                        </li>
-                    </ul>
-                </aside>
 
-                <!-- OUR CLUB SECTION-->
+        <!-- Sidebar -->
+        <nav class="col-2">
 
-                <!-- OUR CLUB SECTION-->
-                <div class="row">
-                    <section class="container col-12">
-                        <div class="row container">
-                            <div class="border border-info">
-                                <div class="col-8 float-left">
-                                    <h2>Our Club</h2>
+            <ul class="nav flex-column bg-info sidebar">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#ourclub">Our Club</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#ourowner">Our Owner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#history">History of Fencing</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container col-10">
+            <div class="border border-info ">
 
-                                    <p>The English term fencing, in the sense of "the action or art of using the sword
-                                        scientifically, dates to the late 16th century, when it denoted systems designed
-                                        for
-                                        the
-                                        Renaissance rapier."</p>
-                                </div>
+            </div>
+            <div class="border border-info">
 
-                                <section>
-                                    <div class="container m-2">
-                                        <div class="card" style="width: 20rem;" id="ourowner">
-                                            <img src="img/ourclub.jpg" class="card-img-top"
-                                                alt="students practicing fencing">
-                                            <div class="card-body">
-                                                <p class="card-text">Students practicing drills together to improve
-                                                    accuracy.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
 
-                        </div>
-                    </section>
-                </div>
-
+            </div>
+            <div class="border border-info">
 
             </div>
         </div>
