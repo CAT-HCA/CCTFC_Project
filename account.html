@@ -11,7 +11,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- linking custom CSS -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/account.css">
 
   <!--Font Awesome link-->
   <script src="https://kit.fontawesome.com/d9e1614114.js"></script>
@@ -49,24 +49,136 @@
     </ul>
   </nav>
 
-   <!-- Header -->
-  
-   <header class="row">
+  <!-- Header -->
+
+  <header class="row">
     <div class="col-12">
       <img src="img/long_logo.png" class="mx-auto d-block" height="120" alt="CCTFC Logo">
     </div>
-    </header>
+  </header>
 
 
-       <!-- BODY CONTENT GOES HERE -->
+  <!-- BODY CONTENT GOES HERE -->
+  <!-- TABLE -->
 
-      <!-- FOOTER -->
-      <footer class="row fixed-bottom">
-      <div class="container col-12">
+  <main class="container">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Meet</th>
+          <th scope="col">Opponent</th>
+          <th scope="col">Win/Lose</th>
+          <th scope="col">Opponent Score</th>
+          <th scope="col">Your Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <div class="form-group-row">
+              <label for="addDate" class="form-label"><i class="far fa-plus-square"></i> Date</label>
+              <input type="date" class="form-control border-info" id="addDate" value="">
+            </div>
+          </th>
+          <th scope="row">
+            <div class="form-group-row">
+              <label for="addMeet" class="form-label"><i class="far fa-plus-square"></i> Meet</label>
+              <input type="text" class="form-control border-info" id="addMeet" value="">
+            </div>
+          </th>
+          <th scope="row">
+            <div class="form-group-row">
+              <label for="addOpponent" class="form-label"><i class="far fa-plus-square"></i> Opponent</label>
+              <input type="text" class="form-control border-info" id="addOpponent" value="">
+            </div>
+          </th>
+          <th scope="row">
+            <div class="form-group">
+              <label for="addWinLose"><i class="far fa-plus-square"></i> Win/Lose</label>
+              <select class="form-control border-info" id="addWinLose">
+                <option selected>Select...</option>
+                <option value="W">Win</option>
+                <option value="L">Lose</option>
+              </select>
+            </div>
+          </th>
+          <th scope="row">
+            <div class="form-group-row">
+              <label for="addOpponentScore" class="form-label"><i class="far fa-plus-square"></i> Opponent Score</label>
+              <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore" value="">
+            </div>
+          </th>
+          <th scope="row">
+            <div class="form-group-row">
+              <label for="addYourScore" class="form-label"><i class="far fa-plus-square"></i> Your Score</label>
+              <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore" value="">
+            </div>
+          </th>
+
+        </tr>
+        <tr>
+
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>Thornton</td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry the Bird</td>
+          <td>@twitter</td>
+          <td>@fat</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>Mark</td>
+          <td>Otto</td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry the Bird</td>
+          <td>@twitter</td>
+          <td>@fat</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+
+      </tbody>
+    </table>
+  </main>
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="row fixed-bottom">
+    <div class="container col-12">
       <hr>
-      <p class="float-right mr-4"><img src="img/fencing_mask_icon.png" alt="fencing mask"> Cori Trudeau - HartCode Academy 2019</p>
+      <p class="float-right mr-4"><img src="img/fencing_mask_icon.png" alt="fencing mask"> Cori Trudeau - HartCode
+        Academy 2019</p>
     </div>
-    </footer>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
