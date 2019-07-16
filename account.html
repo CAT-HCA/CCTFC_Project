@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- linking custom CSS -->
+  <!-- linking custom site CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- linking custom page CSS -->
   <link rel="stylesheet" type="text/css" href="css/account.css">
 
   <!--Font Awesome link-->
@@ -26,24 +29,26 @@
 <body>
 
   <!-- Nav bar -->
-  <!--Brand Logo **ADD PHOTO WHEN FOUND***-->
-  <nav class="navbar navbar-dark bg-dark">
+  <!--Brand Logo-->
+  <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
     <a class="navbar-brand" href="index.html">
       <img src="img/large_mask_logo.png" height="40" alt="fencing mask logo">
       <span class="align-middle font-weight-bold text-info cctfc">CCTFC</span>
     </a>
     <!--Right side nav items-->
-    <ul class="nav">
+
+
+    <ul class="nav topnav">
       <li class="nav-item">
-        <a class="nav-link invisible" href="account.html">My Account</a>
+        <a class="nav-link active" href="#">My Account</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="login.html">Login</a>
+        <a class="nav-link inactive" href="login.html">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link inactive" href="about.html">About</a>
       </li>
-      <li>
+      <li id="btnhov">
         <a class="btn btn-info" href="register.html" role="button">Become a Member!</a>
       </li>
     </ul>
@@ -63,69 +68,68 @@
 
   <main class="container">
     <form action="#" method="get">
-      <table class="table table-bordered table-hover">
+      <table class="table table-bordered table-hover text-center">
         <thead>
-          <tr>
-            <th scope="col">&nbsp;</th>
-            <th scope="col">Date</th>
-            <th scope="col">Meet</th>
-            <th scope="col">Opponent</th>
-            <th scope="col">Win/Loss</th>
-            <th scope="col">Your Score</th>
-            <th scope="col">Opponent Score</th>
+          <tr class="thead-dark">
+            <th scope="col" class="align-middle" ></th>
+            <th scope="col" class="align-middle" >Date</th>
+            <th scope="col" class="align-middle" >Meet</th>
+            <th scope="col" class="align-middle" >Opponent</th>
+            <th scope="col" class="align-middle" >Win/Loss</th>
+            <th scope="col" class="align-middle" >Your Score</th>
+            <th scope="col" class="align-middle" >Opponent Score</th>
           </tr>
         </thead>
         <tbody>
 
-          <tr>
+          <tr class="table-info">
             <!--SUBMIT BUTTON-->
-            <td scope="row" class="align-middle">
+            <th scope="row" class="align-middle">
               <div class="form-group-row">
-                <button type="submit" class="btn btn-info">Add New Entry</button>
+                <button type="submit" class="btn btn-info"> <i
+                    class="far fa-plus-square"></i> Add New Entry</button>
               </div>
-            </td>
-            <td scope="row" class="align-middle">
+            </th>
+            <th scope="row" class="align-middle">
               <div class="form-group-row">
-                <label for="addDate" class="form-label"><i class="far fa-plus-square"></i> Date</label>
-                <input type="date" class="form-control border-info" id="addDate" value="">
+
+                <input type="date" class="form-control border-info" id="addDate" >
               </div>
-            </td>
-            <td scope="row" class="align-middle">
+            </th>
+            <th scope="row" class="align-middle">
               <div class="form-group-row">
-                <label for="addMeet" class="form-label"><i class="far fa-plus-square"></i> Meet</label>
-                <input type="text" class="form-control border-info" id="addMeet" value="" placeholder="meet location">
+
+                <input type="text" class="form-control border-info" id="addMeet" placeholder="Meet Location">
               </div>
-            </td>
-            <td scope="row" class="align-middle">
+            </th>
+            <th scope="row" class="align-middle">
               <div class="form-group-row">
-                <label for="addOpponent" class="form-label"><i class="far fa-plus-square"></i> Opponent</label>
-                <input type="text" class="form-control border-info" id="addOpponent" value=""
+
+                <input type="text" class="form-control border-info" id="addOpponent"
                   placeholder="Last name, First name">
               </div>
-            </td>
-            <td scope="row" class="align-middle">
-              <div class="form-group">
-                <label for="addWinLoss"><i class="far fa-plus-square"></i> Win/Loss</label>
+            </th>
+            <th scope="row" class="align-middle form-label">
+              <div class="form-group-row colwid">
+
                 <select class="form-control border-info" id="addWinLoss">
                   <option selected>Select...</option>
                   <option value="W">Win</option>
                   <option value="L">Loss</option>
                 </select>
               </div>
-            </td>
-            <td scope="row" class="align-middle">
-              <div class="form-group-row">
-                <label for="addYourScore" class="form-label"><i class="far fa-plus-square"></i> Score</label>
-                <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore" value="">
+            </th>
+            <th scope="row" class="align-middle">
+              <div class="form-group-row colwid">
+
+                <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore" >
               </div>
-            </td>
-            <td scope="row" class="align-middle">
-              <div class="form-group-row">
-                <label for="addOpponentScore" class="form-label"><i class="far fa-plus-square"></i> 
-                  Score</label>
-                <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore" value="">
+            </th>
+            <th scope="row" class="align-middle">
+                <div class="form-group-row colwid">
+                <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore" >
               </div>
-            </td>
+            </th>
 
 
           </tr>
