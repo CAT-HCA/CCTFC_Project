@@ -61,8 +61,8 @@
        <!-- BODY CONTENT GOES HERE -->
         <!-- Login Form -->
         <main class="row">
-
-       <form class="container col-6">
+<!-- form method SHOULD be post, not get to protect PII-->
+       <form action="account.html" method="get" class="container col-6">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
