@@ -18,3 +18,17 @@ table.table-bordered th, table.table-bordered td {
     width: 100%;
 
 }
+
+
+.editbuts {
+    text-align:center;
+    width: 48%;
+}
+
+.accform th, td {
+    text-align:center;
+}
+
+.addbt {
+    color:white;
+}
