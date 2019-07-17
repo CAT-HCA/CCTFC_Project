@@ -13,6 +13,9 @@
   <!-- linking custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <!-- linking custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
   <!--Font Awesome link-->
   <script src="https://kit.fontawesome.com/d9e1614114.js"></script>
 
@@ -33,15 +36,15 @@
       <span class="align-middle font-weight-bold text-info cctfc">CCTFC</span>
     </a>
     <!--Right side nav items-->
-    <ul class="nav">
+    <ul class="nav topnav">
       <li class="nav-item">
-        <a class="nav-link active" href="account.html">My Account</a>
+        <a class="nav-link invisible" href="account.html">My Account</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="login.html">Login</a>
+        <a class="nav-link active" href="#">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link inactive" href="about.html">About</a>
       </li>
       <li>
         <a class="btn btn-info" href="register.html" role="button">Become a Member!</a>
@@ -61,11 +64,11 @@
        <!-- BODY CONTENT GOES HERE -->
         <!-- Login Form -->
         <main class="row">
-<!-- form method SHOULD be post, not get to protect PII-->
+<!-- form method SHOULD be post, not get, to protect PII-->
        <form action="account.html" method="get" class="container col-6">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autofocus required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
