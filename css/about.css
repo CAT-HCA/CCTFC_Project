@@ -1,16 +1,38 @@
 /*LEFT SIDE NAV CSS*/
+/*side bar background color-teal*/
 .sidebar {
     background-color: #17a2b8;
 }
-
+/*side bar links default to white when inactive or visited*/
 ul.sidebar a:link, a:visited {
     color: white; 
   }
-  
+/*side bar links underlined at hover*/
 ul.sidebar a:hover {
     text-decoration:underline;
   }
-  
-ul.sidebar  a.active {
-    color: white;
-  }
+
+  /*END LEFT SIDE NAV CSS*/
+  /*FORMATTING CARDS*/
+  /*DEFINING CARD IMG WIDTH AND FLOATS*/
+.cardr {
+  max-width: 400px;
+  float: right;
+  clear: left;
+}
+.cardl {
+  max-width: 250px;
+  float: left;
+  clear: right;
+}
+
+.boxesr {
+  min-height: 400px;
+}
+.boxesl {
+  min-height: 450px;
+}
+
+h2 {
+  color: #17a2b8;
+}
