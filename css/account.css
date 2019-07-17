@@ -11,3 +11,10 @@ table.table-bordered th, table.table-bordered td {
 .colwid {
     width: 90px;
 }
+
+.jtronimg {
+    background-image: url("../img/fencing_lights.png");
+    background-repeat: no-repeat;
+    width: 100%;
+
+}

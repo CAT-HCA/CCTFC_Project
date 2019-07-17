@@ -56,11 +56,14 @@
 
   <!-- Header -->
 
-  <header class="row">
-    <div class="col-12">
-      <img src="img/long_logo.png" class="mx-auto d-block" height="120" alt="CCTFC Logo">
+
+
+  <div class="jumbotron jumbotron-fluid jtronimg">
+    <div class="container">
+      <h1 class="display-4 text-white">My Account</h1>
+      <p class="lead text-info w-25">Keep track of your meets and scores and see how your practice has paid off!</p>
     </div>
-  </header>
+  </div>
 
 
   <!-- BODY CONTENT GOES HERE -->
@@ -71,13 +74,13 @@
       <table class="table table-bordered table-hover text-center">
         <thead>
           <tr class="thead-dark">
-            <th scope="col" class="align-middle" ></th>
-            <th scope="col" class="align-middle" >Date</th>
-            <th scope="col" class="align-middle" >Meet</th>
-            <th scope="col" class="align-middle" >Opponent</th>
-            <th scope="col" class="align-middle" >Win/Loss</th>
-            <th scope="col" class="align-middle" >Your Score</th>
-            <th scope="col" class="align-middle" >Opponent Score</th>
+            <th scope="col" class="align-middle"></th>
+            <th scope="col" class="align-middle">Date</th>
+            <th scope="col" class="align-middle">Meet</th>
+            <th scope="col" class="align-middle">Opponent</th>
+            <th scope="col" class="align-middle">Win/Loss</th>
+            <th scope="col" class="align-middle">Your Score</th>
+            <th scope="col" class="align-middle">Opponent Score</th>
           </tr>
         </thead>
         <tbody>
@@ -86,14 +89,13 @@
             <!--SUBMIT BUTTON-->
             <th scope="row" class="align-middle">
               <div class="form-group-row">
-                <button type="submit" class="btn btn-info"> <i
-                    class="far fa-plus-square"></i> Add New Entry</button>
+                <button type="submit" class="btn btn-info"> <i class="far fa-plus-square"></i> Add New Entry</button>
               </div>
             </th>
             <th scope="row" class="align-middle">
               <div class="form-group-row">
 
-                <input type="date" class="form-control border-info" id="addDate" >
+                <input type="date" class="form-control border-info" id="addDate">
               </div>
             </th>
             <th scope="row" class="align-middle">
@@ -122,12 +124,12 @@
             <th scope="row" class="align-middle">
               <div class="form-group-row colwid">
 
-                <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore" >
+                <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore">
               </div>
             </th>
             <th scope="row" class="align-middle">
-                <div class="form-group-row colwid">
-                <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore" >
+              <div class="form-group-row colwid">
+                <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore">
               </div>
             </th>
 
@@ -196,7 +198,7 @@
 
 
   <!-- FOOTER -->
-  <footer class="row fixed-bottom">
+  <footer class="row">
     <div class="container col-12">
       <hr>
       <p class="float-right mr-4"><img src="img/fencing_mask_icon.png" alt="fencing mask"> Cori Trudeau - HartCode
