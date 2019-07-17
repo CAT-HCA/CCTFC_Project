@@ -1,4 +1,9 @@
 /*TOP NAV CSS*/
+
+.logosz {
+  height:40px;
+} 
+
 a:link, a:visited {
     color: white; 
 
