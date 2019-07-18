@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- linking custom CSS -->
+    <!-- linking custom CSS (no page specific css required) -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!--Font Awesome link-->
@@ -24,12 +24,10 @@
 <!-- Start Body  -->
 
 <body>
-
     <!-- Nav bar -->
     <!--Brand Logo **ADD PHOTO WHEN FOUND***-->
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark topnav">
         <a class="navbar-brand" href="index.html">
-            <img src="img/large_mask_logo.png" height="40" alt="fencing mask logo">
             <span class="align-middle font-weight-bold text-info cctfc">CCTFC</span>
         </a>
         <!--Right side nav items-->
@@ -38,13 +36,13 @@
                 <a class="nav-link invisible" href="account.html">My Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="login.html">Login</a>
+                <a class="nav-link inactive" href="login.html">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
+                <a class="nav-link inactive" href="about.html">About</a>
             </li>
-            <li>
-                <a class="btn btn-info" href="register.html" role="button">Become a Member!</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Register</a>
             </li>
         </ul>
     </nav>
@@ -53,15 +51,16 @@
 
     <header class="row">
         <div class="col-12">
-            <img src="img/long_logo.png" class="mx-auto d-block" height="120" alt="CCTFC Logo">
+            <img src="img/long_logo.png" class="mx-auto d-block headerlogo" alt="CCTFC Logo">
         </div>
     </header>
 
 
-    <!-- BODY CONTENT GOES HERE -->
+    <!-- BODY CONTENT -->
 
-    <!-- form method SHOULD be post, not get to protect PII-->
-    <form class="container" action="login.html" method="get">
+    <!-- form method SHOULD be post, not get to protect PII would use below
+       <form class="container" action="login.html" method="POST">-->
+    <form class="container" action="login.html" method="GET">
         <!--PERSONAL INFORMATION SECTION-->
         <div class="form-row">
             <h2 class="text-info">Personal Information</h2>
@@ -99,11 +98,11 @@
             </div>
             <div class="form-group col-6">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity" required>
+                <input type="text" class="form-control" id="inputCity" placeholder="Boston" required>
             </div>
             <div class="form-group col-md-3">
                 <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" required>
                     <option value="" selected>Choose...</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -160,18 +159,19 @@
             </div>
             <div class="form-group col-md-3">
                 <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip" required>
+                <input type="text" class="form-control" id="inputZip" placeholder="12345" required>
             </div>
         </div>
 
 
 
-        <!--MEMBERSHIP PAYMENT FORM GROUP-->
+        <!--MEMBERSHIP PAYMENT FORM section-->
         <div class="form-row">
             <h2 class="text-info col-12">Membership Payment</h2>
         </div>
         <div class="form-row">
             <div class="container col-12">
+                <!-- would add functionality to expand or hide an additional address form group-->
                 <div class="form-check col-12">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
                     <label class="form-check-label" for="defaultCheck1">Shipping and Payment address same as above
@@ -224,7 +224,6 @@
                         <option value="10">October</option>
                         <option value="11">November</option>
                         <option value="12">December</option>
-
                     </select>
                 </div>
                 <div class="form-group col-4">
@@ -243,25 +242,20 @@
                 </div>
                 <div class="form-group col-4">
                     <label for="ccCode">Security Code</label>
-                    <input type="text" class="form-control" id="ccCode" required>
+                    <input type="text" class="form-control" id="ccCode" placeholder="123" required>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-        <!--FENCING BACKGROUND FORM GROUP-->
+        <!--FENCING BACKGROUND FORM section-->
         <div class="form-row">
             <h2 class="text-info col-12">Fencing Background</h2>
             <div class="form-group col-12">
                 <label for="equipRental">Do you need to rent any equipment from the club? If so, please note your
                     needs
                     below.</label>
-                <textarea class="form-control" id="equipRental" rows="6"></textarea>
+                <textarea class="form-control" id="equipRental" rows="6"
+                    placeholder="- size large mask etc."></textarea>
             </div>
             <div class="form-group col-8">
                 <label for="formControlRange">Please rate your current fencing skill level from beginner to
@@ -277,12 +271,11 @@
                     </label>
                 </div>
                 <br>
+                <!--Button directs to Login page per form action above-->
                 <button type="submit" class="btn btn-info">Start my Membership!</button>
             </div>
         </div>
     </form>
-
-
 
 
     <!-- FOOTER -->
