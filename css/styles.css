@@ -3,6 +3,7 @@
 /*controls height of logo in navbar*/
 .logosz {
   color: #17a2b8;
+  height: 120px;
 }
 /*controls navbar link formatting*/
 .topnav a:link,
