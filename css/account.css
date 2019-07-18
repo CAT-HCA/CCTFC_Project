@@ -10,15 +10,13 @@ table.table-bordered td {
 }
 
 /*sets last 3 columns to equal width*/
-.colwid {
-  width: 90px;
-}
 
 /*adjusted size of jumbotron for img dimensions*/
 .jtronimg {
   background-image: url("../img/fencing_lights.png");
+  background-color: black;
   background-repeat: no-repeat;
-  width: 1349px;
+  background-size: cover;
   height: 329px;
 }
 /*styling of buttons*/
@@ -37,4 +35,102 @@ table.table-bordered td {
 .accform th,
 td {
   text-align: center;
+}
+
+/* Account Page (user interaction) media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  .btntext {
+    display: none;
+  }
+  .jtrontxt {
+    width: 100%;
+  }
+  .jtrontxt h1 {
+    font-size: 20px;
+  }
+  .jtrontxt p {
+    font-size: 15px;
+  }
+  .jtronimg {
+    background-image: none;
+    height: 120px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+  .btntext {
+    display: none;
+  }
+  .jtronimg {
+    background-image: url("../img/fencing_lights_768.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 187px;
+  }
+  .jtrontxt {
+    width: 25%;
+  }
+  .jtrontxt h1 {
+    font-size: 20px;
+  }
+  .jtrontxt p {
+    font-size: 13px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+  .jtronimg {
+    background-image: url("../img/fencing_lights_992.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+  }
+  .jtrontxt h1 {
+    font-size: 20px;
+  }
+  .jtrontxt p {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .jtrontxt h1 {
+    font-size: 30px;
+  }
+
+  body {
+    background-color: yellow;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: pink;
+  }
+  .jtrontxt h1 {
+    font-size: 40px;
+  }
+  .jtrontxt p {
+    font-size: 20px;
+  }
+  .btntext {
+    display: initial;
+  }
 }
