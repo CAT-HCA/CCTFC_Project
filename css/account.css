@@ -1,35 +1,40 @@
-/*TABLE BORDER*/
+/*TABLE BORDER STYLING*/
 
 table.table-bordered {
-    border:1px #17a2b8;
-    margin-top:20px;
-  }
-table.table-bordered th, table.table-bordered td {
-    border:1px solid #17a2b8;
+  border: 1px #17a2b8;
+  margin-top: 20px;
+}
+table.table-bordered th,
+table.table-bordered td {
+  border: 1px solid #17a2b8;
 }
 
+/*sets last 3 columns to equal width*/
 .colwid {
-    width: 90px;
+  width: 90px;
 }
 
+/*adjusted size of jumbotron for img dimensions*/
 .jtronimg {
-    background-image: url("../img/fencing_lights.png");
-    background-repeat: no-repeat;
-    width: 1349px;
-    height: 329px;
-
+  background-image: url("../img/fencing_lights.png");
+  background-repeat: no-repeat;
+  width: 1349px;
+  height: 329px;
 }
-
-
-.editbuts {
-    text-align:center;
-    width: 48%;
-}
-
-.accform th, td {
-    text-align:center;
-}
-
+/*styling of buttons*/
 .addbt {
-    color:white;
+  color: white;
+}
+.editbuts {
+  text-align: center;
+  width: 48%;
+}
+.editbuts:hover i {
+  color: white;
+}
+
+/*styling of table text*/
+.accform th,
+td {
+  text-align: center;
 }
