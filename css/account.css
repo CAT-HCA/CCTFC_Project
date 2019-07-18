@@ -41,9 +41,7 @@ td {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
+
   .btntext {
     display: none;
   }
@@ -64,9 +62,7 @@ td {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
-  }
+
   .btntext {
     display: none;
   }
@@ -90,9 +86,7 @@ td {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  body {
-    background-color: green;
-  }
+
   .jtronimg {
     background-image: url("../img/fencing_lights_992.png");
     background-color: black;
@@ -114,16 +108,11 @@ td {
     font-size: 30px;
   }
 
-  body {
-    background-color: yellow;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  body {
-    background-color: pink;
-  }
+
   .jtrontxt h1 {
     font-size: 40px;
   }
