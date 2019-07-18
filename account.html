@@ -32,28 +32,24 @@
   <!--Brand Logo-->
   <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
     <a class="navbar-brand" href="index.html">
-      <img src="img/large_mask_logo.png" height="40" alt="fencing mask logo">
       <span class="align-middle font-weight-bold text-info cctfc">CCTFC</span>
     </a>
+
     <!--Right side nav items-->
-
-
     <ul class="nav topnav">
       <li class="nav-item">
         <a class="nav-link inactive" href="about.html">About</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link inactive" href="login.html">Logout</a>
-        </li>
+        <a class="nav-link inactive" href="login.html">Logout</a>
+      </li>
       <li class="nav-item">
-          <a class="nav-link active" href="#">My Account</a>
-        </li>
+        <a class="nav-link active" href="#">My Account</a>
+      </li>
     </ul>
   </nav>
 
-  <!-- Header -->
-
-
+  <!-- Header (removed logo header that was on other pages for better formatting, and assuming if they're members, they know the club)-->
 
   <div class="jumbotron jumbotron-fluid jtronimg">
     <div class="container">
@@ -81,36 +77,34 @@
           </tr>
         </thead>
         <tbody>
-
           <tr class="table-info">
-            <!--SUBMIT BUTTON-->
-            <td  class="align-middle">
+            <td class="align-middle">
               <div class="form-group-row">
-                <button type="submit" class="btn btn-info"> <i class="far fa-plus-square addbt"></i> Add New Entry</button>
+                <!--SUBMIT BUTTON would use javascript to add new row to table with user inputs-->
+                <button type="submit" class="btn btn-info">
+                  <i class="far fa-plus-square addbt"></i> Add New Entry
+                </button>
               </div>
             </td>
             <td class="align-middle">
               <div class="form-group-row">
-
+                <!--Receiving validation warning for date input type, would use javascript for polyfill for unsupported browsers-->
                 <input type="date" class="form-control border-info" id="addDate">
               </div>
             </td>
             <td class="align-middle">
               <div class="form-group-row">
-
                 <input type="text" class="form-control border-info" id="addMeet" placeholder="Meet Location">
               </div>
             </td>
             <td class="align-middle">
               <div class="form-group-row">
-
                 <input type="text" class="form-control border-info" id="addOpponent"
                   placeholder="Last name, First name">
               </div>
             </td>
             <td class="align-middle form-label">
               <div class="form-group-row colwid">
-
                 <select class="form-control border-info" id="addWinLoss">
                   <option selected>Select...</option>
                   <option value="W">Win</option>
@@ -120,7 +114,6 @@
             </td>
             <td class="align-middle">
               <div class="form-group-row colwid">
-
                 <input type="number" min=0 max=15 class="form-control border-info" id="addYourScore">
               </div>
             </td>
@@ -129,42 +122,42 @@
                 <input type="number" min=0 max=15 class="form-control border-info" id="addOpponentScore">
               </div>
             </td>
-
-
           </tr>
-
-
           <tr>
-
             <td>
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-edit"></i>Edit</button>
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-trash-alt"></i>Delete</button>
-                </td>
+              <!--EDIT BUTTONS would open up fields for edit-->
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-edit"></i>Edit</button>
+              <!--DELETE BUTTONS would delete the row of data-->
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-trash-alt"></i>Delete</button>
+            </td>
             <td class="align-middle">04/12/2019</td>
             <td class="align-middle">Norwich Free Academy</td>
             <td class="align-middle">Antonio, Courtney</td>
             <td class="align-middle">Win</td>
             <td class="align-middle">15</td>
             <td class="align-middle">8</td>
-
-
           </tr>
           <tr>
             <td class="align-middle">
-              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-edit"></i>Edit</button>
-              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-trash-alt"></i>Delete</button></td>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-edit"></i>Edit</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-trash-alt"></i>Delete</button></td>
             <td class="align-middle">04/20/2019</td>
             <td class="align-middle">East Lyme</td>
             <td class="align-middle">Smith, Jane</td>
             <td class="align-middle">Win</td>
             <td class="align-middle">15</td>
             <td class="align-middle">13</td>
-
           </tr>
           <tr>
             <td class="align-middle">
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-edit"></i>Edit</button>
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-trash-alt"></i>Delete</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-edit"></i>Edit</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-trash-alt"></i>Delete</button>
             </td>
             <td class="align-middle">05/2/2019</td>
             <td class="align-middle">Silver City</td>
@@ -175,8 +168,10 @@
           </tr>
           <tr>
             <td class="align-middle">
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-edit"></i>Edit</button>
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-trash-alt"></i>Delete</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-edit"></i>Edit</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-trash-alt"></i>Delete</button>
             </td>
             <td class="align-middle">05/2/2019</td>
             <td class="align-middle">Silver City</td>
@@ -184,12 +179,13 @@
             <td class="align-middle">Win</td>
             <td class="align-middle">15</td>
             <td class="align-middle">10</td>
-
           </tr>
           <tr>
             <td class="align-middle">
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-edit"></i>Edit</button>
-                <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts"><i class="far fa-trash-alt"></i>Delete</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-edit"></i>Edit</button>
+              <button type="submit" class="btn btn-outline-info mx-auto d-inline editbuts">
+                <i class="far fa-trash-alt"></i>Delete</button>
             </td>
             <td class="align-middle">05/15/2019</td>
             <td class="align-middle">ICONN</td>
@@ -197,15 +193,10 @@
             <td class="align-middle">Loss</td>
             <td class="align-middle">7</td>
             <td class="align-middle">15</td>
-
         </tbody>
       </table>
     </form>
   </main>
-
-
-
-
 
 
   <!-- FOOTER -->
